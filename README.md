@@ -2,7 +2,7 @@
 
 This repository is DSMA-Net's attempt to classify breast tumors as benign or malignant on a publicly available breast dataset.
 
-We randomly divided the dataset into training, validation and test sets containing 504, 63 and 63 ultrasound images, respectively.
+The dataset contains 630 ultrasound images. We randomly divided the dataset into training set, validation set and test set containing 504, 63 and 63 images respectively.
 
 ## Prerequisites
 - Python 3.6+
