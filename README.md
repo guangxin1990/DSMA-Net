@@ -7,9 +7,8 @@ The dataset contains 630 ultrasound images. We randomly divided the dataset into
 ![architect](./picture/framework.png#w80)
 The architecture of our proposed DSMA-Net. It contains a shared encoder backbone for feature extraction and two independent decoders for classification and segmentation.
 
-<center class="half">
-<img src="./picture/dense_se_block.png" width="200"/><img src="./picture/aspp.png" width="200"/>
-</center>
+![dense_se_block](./picture/dense_se_block.png) ![aspp](./picture/aspp.png)
+
 
 ## Prerequisites
 - Python 3.6+
