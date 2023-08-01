@@ -4,10 +4,10 @@ This repository is DSMA-Net's attempt to classify breast tumors as benign or mal
 
 The dataset contains 630 ultrasound images. We randomly divided the dataset into training set, validation set and test set containing 504, 63 and 63 images respectively.
 
-![architect](./picture/framework.png){:height="80%" width="80%"}
+![architect](./picture/framework.png =400x250)
 The architecture of our proposed DSMA-Net. It contains a shared encoder backbone for feature extraction and two independent decoders for classification and segmentation.
 
-![a](./picture/framework.png){:height="80%" width="80%"}
+![dense_se_block](./picture/dense_se_block.png) ![aspp](./picture/aspp.png)
 
 ## Prerequisites
 - Python 3.6+
