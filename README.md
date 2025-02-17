@@ -23,11 +23,8 @@ Dense SE Blocks and ASPP Structures in DSMA-Net architecture.
 - PyTorch 1.0+
 
 ## Usage
-### 1
-Download the  dataset [here](https://drive.google.com/file/d/11peQ9NXuPA-QNNA9pmzD8SbTXTfQz17_/view?usp=drive_link) and put it into `./data`.
-### 2
 Use `python train.py` for training and then `python test.py` for testing.
-### 3
+
 If you want to compare, use `python train_compare.py` for training and then `python test_compare.py` for testing.
 
 ## Citing
