@@ -13,9 +13,9 @@ def read_txt(txt_path):
     return txt_data
 
 
-class BreastDataset(Dataset):
+class ThyroidDataset(Dataset):
     def __init__(self, root_dir, txt_b, txt_m, transform=None):
-        super(BreastDataset, self).__init__()
+        super(ThyroidDataset, self).__init__()
         self.root_dir = root_dir
         self.txt_path = [txt_b, txt_m]
         self.classes = ['benign', 'malignant']
@@ -25,7 +25,7 @@ class BreastDataset(Dataset):
         self.mask_list = []
         for c in range(self.num_cls):
             cls_list = [[os.path.join(self.root_dir, self.classes[c], item), c] for item in read_txt(self.txt_path[c])]
-            mask_list = [os.path.join(self.root_dir, self.maskes[c], item.split(".")[0] + "_mask.png") for item in read_txt(self.txt_path[c])]
+            mask_list = [os.path.join(self.root_dir, self.maskes[c], item) for item in read_txt(self.txt_path[c])]
             self.img_list += cls_list
             self.mask_list += mask_list
         self.transform = transform

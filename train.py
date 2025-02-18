@@ -14,7 +14,7 @@ import utils
 
 from sklearn.metrics import roc_auc_score
 from torch.utils.data import DataLoader
-from datasets import BreastDataset
+from datasets import ThyroidDataset
 from DSMA import DSMANet
 
 warnings.filterwarnings('ignore')
@@ -64,11 +64,11 @@ def get_transform(train, mean=(0.261, 0.261, 0.261), std=(0.134, 0.134, 0.134)):
 mean = (0.261, 0.261, 0.261)
 std = (0.134, 0.134, 0.134)
 
-trainset = BreastDataset(root_dir='./data', txt_m='./path/m/malignant_train.txt',
+trainset = ThyroidDataset(root_dir='./data', txt_m='./path/m/malignant_train.txt',
                           txt_b='./path/b/benign_train.txt',
                           transform=get_transform(train=True, mean=mean, std=std))
 
-valset = BreastDataset(root_dir='./data', txt_m='./path/m/malignant_val.txt',
+valset = ThyroidDataset(root_dir='./data', txt_m='./path/m/malignant_val.txt',
                         txt_b='./path/b/benign_val.txt',
                         transform=get_transform(train=False, mean=mean, std=std))
 

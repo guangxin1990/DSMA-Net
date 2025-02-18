@@ -11,7 +11,7 @@ from torch.utils.data import DataLoader
 from sklearn.metrics import roc_auc_score, confusion_matrix, roc_curve
 
 import transforms as T
-from datasets import BreastDataset
+from datasets import ThyroidDataset
 from DSMA import DSMANet
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
@@ -120,7 +120,7 @@ def plot_confusion_matrix(cm,
 mean = (0.261, 0.261, 0.261)
 std = (0.134, 0.134, 0.134)
 
-testset = BreastDataset(root_dir='./data/', txt_m='./path/m/malignant_test.txt',
+testset = ThyroidDataset(root_dir='./data/', txt_m='./path/m/malignant_test.txt',
                          txt_b='./path/b/benign_test.txt', transform=get_transform(train=False, mean=mean, std=std))
 
 print(testset.__len__())
