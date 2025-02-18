@@ -4,7 +4,7 @@ This repository is DSMA-Net's attempt to classify thyroid nodules as benign or m
 
 he dataset contains 2898 ultrasound images, of which 1434 ultrasound images are malignant nodules and 1464 ultrasound images are benign nodules. Experiments can be performed using cross-validation.
 
-We will upload the data as soon as the hospital dataset is publicly available.
+We will upload the full experimental image data as soon as the hospital dataset is publicly available.
 
 # DSMA-Net Architecture
 <div align="center">
@@ -14,6 +14,7 @@ The architecture of our proposed DSMA-Net. It contains a shared encoder backbone
 
 <div align="center">
   <img src="./picture/dense_se_block.png" width="300" height="300">
+  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
   <img src="./picture/aspp.png" width="250" height="250">
 </div>
 Dense SE Blocks and ASPP Structures in DSMA-Net architecture.
